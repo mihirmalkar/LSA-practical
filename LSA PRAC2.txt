@@ -1,0 +1,27 @@
+                       
+                                                              Practical no.2
+1. Adding a user: A user is a person who utilizes a computer or network service.
+                   A user the works on machine or have the permissions to read, write and execute particular or all files.
+                   A user can be added individually or in group.
+                   Command to add a user individually is : $sudo adduser <username>
+                   example: $sudo adduser LSA_user
+      
+2.Network settings: The ip address, the ethernet connections and other network connections can be viewed by  :
+                      Command: $sudo ip a  (or)  $sudo ip addr
+    
+3.Configuring services: Services are also known as daemons which efficiently run in the background. 
+		It usually have  'd' in last of their name to identify it as a daemon for example - smbd , nmbd,etc
+                          It can be lookout in the /etc/folder as mostly the services are there for example: $sudo nano /etc/dhcp/dhcpd.conf 
+
+4.List of services running: Command to list the currently active and running services:- $sudo systemctl
+
+5.Command to enable a service:                 $sudo systemctl enable <service_name>
+					     Eg: $sudo systemctl enable isc-dhcp-server.service 
+    Command to start a service:                  $sudo systemctl start <service_name>
+					     Eg: $sudo systemctl start isc-dhcp-server.service	
+    Command to check the status of a service:    $sudo systemctl status <service_name>
+					     Eg: $sudo systemctl status isc-dhcp-server.service
+    Command to stop a service:                   $sudo systemctl stop <service_name>
+					     Eg: $sudo systemctl stop isc-dhcp-server.service
+    Command to auto-start a service:             $sudo systemctl restart <service_name>
+				             Eg: $sudo systemctl restart isc-dhcp-server.service
